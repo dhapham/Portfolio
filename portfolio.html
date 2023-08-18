@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HP'S PROFILE</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body onload="myFunction()">
+    <div class="wrapper">
+      <!-- Header Section -->
+      <div class="header">
+        <!-- Navigation Bar -->
+        <div class="nav">
+          <!-- Site Title -->
+          <h2><a href="index.html">SANDY HA PHAM</a></h2>
+          <ul>
+            <!-- Hamburger Icon for Mobile Menu -->
+            <li>
+              <a class="burger" onclick="openSideMenu()" href="#">
+                <!-- Hamburger Icon SVG -->
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                  <!-- Three horizontal lines to represent the icon -->
+                  <rect width="100" height="20"></rect>
+                  <rect y="30" width="100" height="20"></rect>
+                  <rect y="60" width="100" height="20"></rect>
+                </svg>
+              </a>
+            </li>
+            <!-- Desktop Menu Items -->
+            <div class="desktop-nav">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="portfolio.html">PORTFOLIO</a></li>
+              <li><a href="about.html">ABOUT ME</a></li>
+            </div>
+          </ul>
+          <!-- Mobile Side Navigation Menu -->
+          <div class="side-nav" id="side-nav-bar">
+            <ol>
+              <!-- Close Button for Mobile Menu -->
+              <li>
+                <a href="javascript:void(0);" class="close-btn" onclick="closeSideMenu()">&times;</a>
+              </li>
+              <!-- Mobile Menu Links -->
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="portfolio.html">PORTFOLIO</a></li>
+              <li><a href="about.html">ABOUT ME</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+       <!-- Main Content Section -->
+      <div class="main">
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+          <!-- Portfolio Section Title -->
+          <h2 class="changeColour">
+            "Welcome to my portfolio playground—where pixels come alive!"
+          </h2>
+          
+          <!-- Flex Container for Portfolio Items -->
+          <div class="flex">
+            <!-- Video Production Item -->
+            <div>
+              <iframe
+                width="600"
+                height="400"
+                src="https://www.youtube.com/embed/7Bptf5lc1Ss"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <h4>Video production</h4>
+              <button>Read more</button>
+            </div>
+      
+            <!-- Branding Logo Design Item -->
+            <div>
+              <img id="logo" src="images/jollylogo1.jpg" alt="jolly-logo" />
+              <h4>Branding Logo Design</h4>
+              <button>Read more</button>
+            </div>
+      
+            <!-- Web Design and Development Item -->
+            <div>
+              <img id="f1website" src="images/f1website.png" alt="f1 website" />
+              <h4>Web Design and Development</h4>
+              <button>Read more</button>
+            </div>
+      
+            <!-- Graphic Design Item -->
+            <div>
+              <img id="f1design" src="images/PNG/banner.png" alt="f1-design" />
+              <h4>Graphic Design</h4>
+              <button>Read more</button>
+            </div>
+      
+            <!-- Additional Portfolio Items (hidden on load) -->
+            <div class="flex-box-bottom">
+              <iframe
+                width="600"
+                height="400"
+                src="https://www.youtube.com/embed/7zG2ncae6lE"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+              <h4>Promotional Video</h4>
+              <button>Read more</button>
+            </div>
+      
+            <div class="flex-box-bottom">
+              <img id="poster" src="images/EATING.jpg" alt="poster" />
+              <h4>Poster Design</h4>
+              <button>Read more</button>
+            </div>
+          </div>
+          
+          <!-- Button to Toggle Additional Portfolio Items -->
+          <button onclick="toggle()" class="learn-more">Learn more</button>
+        </section>
+        
+        <!-- Greeting Section -->
+        <section id="greeting">
+          <!-- Greeting Title -->
+          <h2>Ready to sprinkle some magic? Let me know your lovely name.</h2>
+          <!-- Input for User's Name -->
+          <input
+            type="text"
+            id="nameInput"
+            placeholder="Enter your name here"
+            oninput="printName()"
+          />
+          <br />
+          <!-- Output to Display User's Name -->
+          <h2 id="output"></h2>
+        </section>
+      </div>
+      
+
+      <!-- Footer  -->
+      <div class="footer" id="contact">
+        <div class="row">
+          <!-- Column 1 - HPBUTNOTALAPTOP Info -->
+          <div class="col col1">
+            <h2>HPBUTNOTALAPTOP</h2>
+            <p>&copy; Photos by Unsplash and Freepik.</p>
+            <br />
+            <h2>OFFICE</h2>
+            <p>
+              600 Finch Ave West
+              <br />
+              North York, ON M2R 3X4
+              <br />
+              <br />
+              Monday-Friday 7:00AM-4:00PM
+              <br />
+              <br />
+              Tel: 123-456-7890
+              <br />
+              Email: info@hp.com
+              <br />
+            </p>
+          </div>
+
+          <!-- Column 2 - Contact Form -->
+          <div class="col col2">
+            <h2>CONTACT ME</h2>
+            <form action="#" method="post" class="contact-form">
+              <!-- Name Input -->
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <!-- Email Input -->
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <!-- Message Input -->
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+              <!-- Submit Button -->
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
