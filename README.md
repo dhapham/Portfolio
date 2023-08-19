@@ -1,3 +1,3 @@
-- 🌱 I’m currently learning Multimedia Design and Development in HUmber College
+- 🌱 I’m currently learning Multimedia Design and Development in Humber College
 - 💞️ I’m looking for an internship, I hope this can find you well
 - 📫 Reach me at dha.pham@gmail.com
